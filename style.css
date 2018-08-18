@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+/* Globals */
+
+body{
+  margin: 0;
+  padding: 0;
+  color:#f7f7f7;
+}
+
+h1{
+  font-size: 100px;
+  margin: 0;
+  font-family: 'Righteous';
+  pointer-events: none;
+}
+h2{
+  font-size: 60px;
+  font-family: 'Baloo Bhai';
+  pointer-events: none;
+}
+h3{
+  pointer-events: none;
+}
+@media screen and (max-width:500px){
+  h1{
+    font-size: 50px;
+  }
+  h2{
+    font-size: 25px;
+  }
+}
+ul{
+  margin: 0;
+}
+
+.button{
+  height:50px;
+  width:20vw;
+  min-width:150px;
+}
+.transparentButton{
+  background: transparent;
+  border: 3px solid white;
+  border-radius: 15px;
+  color:white;
+  font-size: 30px;
+}
+/* Sections */
+
+  /* Intro Div */
+#introDiv{
+  background-image: url("./pics/city.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:100vh;
+}
+#topMenu {
+  height: 100px;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#topMenu ul{
+    list-style: none;
+    width:500px;
+    max-width:80vw;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+}
+#introDivText{
+  height: 60vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  /* Mid Div */
+#midDiv{
+  background: #6897bb;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projectHolder{
+  height:80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.projectBox{
+  margin: 10px;
+  background: #3b5998;
+  width: 350px;
+  max-width: 90vw;
+  height:350px;
+  max-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  /* Bottom Div */
+#botDiv{
+  background: #0099cc;
+  height:100vh;
+}
+
+  /* Footer */
+#footer{
+
+}
