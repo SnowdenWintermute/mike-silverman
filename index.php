@@ -12,20 +12,20 @@
   <div id="introDiv">
     <div id="topMenu">
       <ul>
-        <li>
-          Top
+        <li class="topMenuLink">
+          <a href="#introDiv">Top</a>
         </li>
-        <li>
-          Projects
+        <li class="topMenuLink">
+          <a href="#midDiv">Projects</a>
         </li>
-        <li>
-          Contact
+        <li class="topMenuLink">
+          <a href="#botDiv">Contact</a>
         </li>
       </ul>
     </div>
     <div id="introDivText">
     <h1>Hi, I'm Mike</h1>
-    <h2>This is my landing page</h2>
+    <h3>This is my landing page</h3>
     <a class="button transparentButton" href="#midDiv">Lets go</a>
     </div>
   </div>
@@ -59,6 +59,17 @@
   </div>
 
   <div id="botDiv">
+    <div id="contactHeader">
+      <h2 id="contactLabel">
+        Contact
+      </h2>
+    </div>
+    <form id="contactForm" action="contactForm.php" method="post">
+      <input class="contactInput" name="name" type="text" required placeholder="Name"/>
+      <input class="contactInput" name="email" type="email" required placeholder="Email"/>
+      <textarea class="contactInput" name="message" id="contactText" placeholder="Message"></textarea>
+      <button class="button transparentButton" name="submit" id="formSubmit" type="submit">Send</i></button>
+    </form>
   </div>
 
   <footer id="footerDiv">

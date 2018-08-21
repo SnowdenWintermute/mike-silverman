@@ -21,6 +21,7 @@ h2{
   font-size: 9vmin;
   font-family: 'Righteous';
   pointer-events: none;
+  margin: 0;
 }
 h3{
   font-family: 'Righteous';
@@ -36,6 +37,9 @@ p{
 ul{
   margin: 0;
 }
+input, textarea {
+  font-family: 'Baloo Bhai';
+}
 
 .button{
   height:50px;
@@ -47,7 +51,7 @@ ul{
   align-items: center;
 }
 .transparentButton{
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(104, 151, 187, 0.7);
   border: 3px solid white;
   border-radius: 15px;
   color:white;
@@ -55,22 +59,21 @@ ul{
   transition: .3s;
 }
 .transparentButton:hover{
-    background-color: rgba(104, 151, 187, 0.7);
+    background-color: rgba(104, 151, 187);
     color:white;
     border: 3px solid white;
 }
-/* Sections */
 
-  /* Intro Div */
-#introDiv{
-  background-image: url("./pics/city.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height:100vh;
-}
+	::-webkit-input-placeholder { font-family: 'Baloo Bhai'; } /* Chrome/Opera/Safari */
+	::-moz-placeholder { font-family: 'Baloo Bhai'; } /* firefox 19+ */
+	:-ms-input-placeholder { font-family: 'Baloo Bhai'; } /* ie */
+	:-moz-placeholder { font-family: 'Baloo Bhai'; } /*below firefox 19 */
+
+                  /* Sections */
+
+/* Top Menu */
 #topMenu {
-  height: 100px;
+  height: 10vh;
   max-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -80,12 +83,42 @@ ul{
   background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 #topMenu ul{
+    height: 100%;
     list-style: none;
-    width:500px;
-    max-width:80vw;
+    width:400px;
+    max-width:60vw;
     display: flex;
     justify-content: space-around;
     align-self: flex-end;
+    font-family: "Baloo Bhai"
+}
+.topMenuLink{
+  height:100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topMenuLink a{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vmin;
+  color: white;
+}
+.topMenuLink:hover{
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+  /* Intro Div */
+#introDiv{
+  background-image: url("./pics/city.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:100vh;
 }
 #introDivText{
   height: 60vh;
@@ -94,6 +127,9 @@ ul{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#introDivText h1,h3{
+  margin-bottom: 3vh;
 }
 
   /* Mid Div */
@@ -180,47 +216,97 @@ ul{
 #botDiv{
   background: #001f3f;
   height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#contactHeader{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contactForm{
+  display: flex;
+  flex-direction: column;
+  justify-content:  space-around;
+  align-items: center;
+  height: 80vh;
+  margin-bottom: 6vh;
+}
+.contactInput{
+  width: 70vw;
+  border: 3px solid white;
+  height:7vh;
+  margin: 0;
+  padding: 10px;
+  background: #31698a;
+  color:white;
+  -webkit-box-shadow: 3px 5px 12px -2px rgba(41,27,41,1);
+  -moz-box-shadow: 3px 5px 12px -2px rgba(41,27,41,1);
+  box-shadow: 3px 5px 12px -2px rgba(41,27,41,1);
+  transition: .5s;
+}
+.contactInput:focus{
+  background: #3b5998;
+}
+#contactText{
+  height:32vh;
+  resize: none;
+}
+#formSubmit{
+  font-size: 4vh;
+  height: 7vh;
+  width:100%;
+  background-color: #31698a;
+  display: flex;
+}
+#formSubmit:hover{
+  background: #3b5998;
+}
+#paperIcon{
+  margin-left: 3vw;
+}
+  /* Footer */
+#footerDiv{
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#6897bb;
+}
+#socialButtonHolder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialButton{
+  border-radius: 50%;
+  width: 9vmin;
+  height: 9vmin;
+  margin-right: 1vw;
+  background: #transparent;
+  font-size: 20px;
+  color:white;
+  border:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration:none;
+  font-size: 5vw;
+  transition: .5s;
 }
 
-  /* Footer */
-  #footerDiv{
-    padding: 2vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background:#088da5;
-  }
-  #socialButtonHolder{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .socialButton{
-    border-radius: 50%;
-    width: 9vmin;
-    height: 9vmin;
-    margin-right: 1vw;
-    background: #transparent;
-    font-size: 20px;
-    color:white;
-    border:none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration:none;
-    font-size: 5vw;
-    transition: .5s;
-  }
-
-  #instagram:hover{
-    color:#8a3ab9;
-  }
-  #facebook:hover{
-    color:#3B5998;
-  }
-  #github:hover{
-    color:#211f1f;
-  }
-  #linkedin:hover{
-    color:#0077B5;
-  }
+#instagram:hover{
+  color:#8a3ab9;
+}
+#facebook:hover{
+  color:#3B5998;
+}
+#github:hover{
+  color:#211f1f;
+}
+#linkedin:hover{
+  color:#0077B5;
+}
