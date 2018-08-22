@@ -1,12 +1,13 @@
 <?php
-if(isset($_POST['submit'] && isset($_POST['email']))){
+if(isset($_POST['submit'])){
   $name = $_POST['name'];
+  $subject = "Email from Landing Page";
   $mailFrom = $_POST['email'];
   $message = $_POST['message'];
-  $mailTo = 'michael.p.silverman@gmail.com';
-  $subject = 'Email from Landing Page';
-  $headers = "From: ".mailFrom;
-  $txt = "You have recieved an email from ".name.".\n\n".$message;
+
+  $mailTo = 'mike@mike-silverman.com';
+  $headers = "From: ".$mailFrom;
+  $txt = "You have recieved an email from ".$name.".\n\n".$message."\n\nEmail: ".$mailFrom;
 
 
 
@@ -14,5 +15,3 @@ if(isset($_POST['submit'] && isset($_POST['email']))){
   header("Location: index.php?mailsend");
 
 }
-
- ?>

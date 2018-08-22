@@ -10,18 +10,23 @@ body{
 }
 a{
   text-decoration: none;
+  color: inherit;
+  font-family: sans-serif;
+  font-size: 2vh;
 }
 h1{
   font-size: 13vmin;
   margin: 0;
   font-family: 'Righteous';
   pointer-events: none;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 h2{
   font-size: 9vmin;
   font-family: 'Righteous';
   pointer-events: none;
   margin: 0;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 h3{
   font-family: 'Righteous';
@@ -29,16 +34,19 @@ h3{
   pointer-events: none;
   margin: 0;
   padding: 0;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 p{
   font-size: 3.5vmin;
   font-family: 'Baloo Bhai';
+  line-height:4vh;
 }
 ul{
   margin: 0;
 }
 input, textarea {
   font-family: 'Baloo Bhai';
+  font-size: 4vmin;
 }
 
 .button{
@@ -73,35 +81,38 @@ input, textarea {
 
 /* Top Menu */
 #topMenu {
+  width:100%;
   height: 10vh;
   max-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-self:flex-end;
   background: -moz-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 #topMenu ul{
+    padding-right: 2vw;
     height: 100%;
     list-style: none;
-    width:400px;
-    max-width:60vw;
+    width:550px;
+    max-width:67vw;
     display: flex;
     justify-content: space-around;
     align-self: flex-end;
-    font-family: "Baloo Bhai"
 }
 .topMenuLink{
   height:100%;
-  width:100%;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif;
 }
 .topMenuLink a{
   height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,9 +143,38 @@ input, textarea {
   margin-bottom: 3vh;
 }
 
+  /* About Me */
+  #aboutMe{
+    background: #6897bb;
+    height:auto;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #aboutMeCopy a{
+    font-size: 3vmin;
+    color: lightblue;
+  }
+  #aboutMeCopy a:hover{
+    text-decoration: underline;
+  }
+  #aboutMeHeader{
+    margin-top: 3vmax;
+    margin-bottom: 3vmax;
+  }
+  #aboutMePic img{
+    border-radius: 50%;
+    height: 26vh;
+  }
+  #aboutMeCopy{
+    margin-left: 4vmin;
+    margin-right: 4vmin;
+  }
   /* Mid Div */
 #midDiv{
-  background: #6897bb;
+  background: #3b5998;
   height:100vh;
   display: flex;
   flex-direction: column;
@@ -154,7 +194,6 @@ input, textarea {
   align-items: center;
 }
 .projectBox{
-  background: #0e2f44;
   width: 80%;
   height:17vh;
   padding: 10px;
@@ -168,9 +207,16 @@ input, textarea {
   -webkit-box-shadow: 3px 5px 12px -2px rgba(41,27,41,1);
   -moz-box-shadow: 3px 5px 12px -2px rgba(41,27,41,1);
   box-shadow: 3px 5px 12px -2px rgba(41,27,41,1);
+  transition: .3s;
+}
+.projectBox:hover{
+  -webkit-box-shadow: 3px 5px 12px -2px rgba(255,255,255,1);
+  -moz-box-shadow: 3px 5px 12px -2px rgba(255,255,255,1);
+  box-shadow: 3px 5px 12px -2px rgba(255,255,255,1);
 }
 .projectBox h3{
   margin-top: auto;
+  color: #fff;
 }
 .projectDescription{
   display: flex;
@@ -193,10 +239,10 @@ input, textarea {
 }
 
 #project1{
-  background-image: url("./pics/reactRpgPic2.png");
+  background-image: url("./pics/brickTile.jpg");
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 }
 #project2{
   background-image: url("./pics/bricks.jpg");
@@ -241,12 +287,13 @@ input, textarea {
   height:7vh;
   margin: 0;
   padding: 10px;
-  background: #31698a;
+  background: #6897bb;
   color:white;
   -webkit-box-shadow: 3px 5px 12px -2px rgba(41,27,41,1);
   -moz-box-shadow: 3px 5px 12px -2px rgba(41,27,41,1);
   box-shadow: 3px 5px 12px -2px rgba(41,27,41,1);
-  transition: .5s;
+  transition: .3s;
+  font-size: 5vh;
 }
 .contactInput:focus{
   background: #3b5998;
@@ -265,9 +312,8 @@ input, textarea {
 #formSubmit:hover{
   background: #3b5998;
 }
-#paperIcon{
-  margin-left: 3vw;
-}
+
+
   /* Footer */
 #footerDiv{
   padding: 2vw;
@@ -275,6 +321,11 @@ input, textarea {
   justify-content: space-between;
   align-items: center;
   background:#6897bb;
+  font-family: sans-serif;
+  font-size: 2vh;
+}
+#footerDiv a:hover{
+  text-decoration: underline;
 }
 #socialButtonHolder{
   display: flex;
@@ -295,7 +346,7 @@ input, textarea {
   align-items: center;
   text-decoration:none;
   font-size: 5vw;
-  transition: .5s;
+  transition: .3s;
 }
 
 #instagram:hover{

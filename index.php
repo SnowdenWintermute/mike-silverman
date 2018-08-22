@@ -13,13 +13,16 @@
     <div id="topMenu">
       <ul>
         <li class="topMenuLink">
-          <a href="#introDiv">Top</a>
+          <a href="./about.html">Home</a>
         </li>
         <li class="topMenuLink">
-          <a href="#midDiv">Projects</a>
+          <a href="./about.html">About</a>
         </li>
         <li class="topMenuLink">
-          <a href="#botDiv">Contact</a>
+          <a href="./index.php#midDiv">Projects</a>
+        </li>
+        <li class="topMenuLink">
+          <a href="./index.php#botDiv">Contact</a>
         </li>
       </ul>
     </div>
@@ -37,12 +40,12 @@
       </h2>
     </div>
     <div id="projectsFlexContainer">
-      <div class="projectBox" id="project1">
+      <a class="projectBox" id="project1" href="https://reactrpg.herokuapp.com/" target="_blank">
         <h3>React RPG</h3>
         <div class="projecBoxText" id="desc1">
           <p>Defeat monsters, collect loot.</p>
         </div>
-      </div>
+      </a>
       <div class="projectBox" id="project2">
         <h3>Other Project</h3>
         <div class="projecBoxText" id="desc2">
@@ -64,7 +67,7 @@
         Contact
       </h2>
     </div>
-    <form id="contactForm" action="contactForm.php" method="post">
+    <form id="contactForm" action="contact.php" method="post">
       <input class="contactInput" name="name" type="text" required placeholder="Name"/>
       <input class="contactInput" name="email" type="email" required placeholder="Email"/>
       <textarea class="contactInput" name="message" id="contactText" placeholder="Message"></textarea>
@@ -73,7 +76,12 @@
   </div>
 
   <footer id="footerDiv">
-    <p>michael.p.silverman@gmail.com</p>
+    <div id="footerLinks">
+      <a href="#introDiv">Home</a>&nbsp;|
+      <a href="./about.html">About</a>&nbsp;|
+      <a href="#midDiv">Projects</a>&nbsp;|
+      <a href="#botDiv">Contact</a>
+    </div>
     <div id="socialButtonHolder">
       <a class="socialButton" id="instagram" href="https://www.instagram.com/michaelpsilverman/" target="_blank">
       <i class="fab fa-instagram"></i>
