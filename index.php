@@ -46,12 +46,12 @@
           <p>Defeat monsters, collect loot.</p>
         </div>
       </a>
-      <div class="projectBox" id="project2">
-        <h3>Other Project</h3>
+      <a class="projectBox" id="project2" href="https://snowdenwintermute.github.io/ellen-silverman" target="_blank">
+        <h3>Art Portfolio</h3>
         <div class="projecBoxText" id="desc2">
-          <p>A future project...</p>
+          <p>My mom's art. (in progress)</p>
         </div>
-      </div>
+      </a>
       <div class="projectBox" id="project3">
         <h3>Placeholder</h3>
         <div class="projecBoxText" id="desc3">
