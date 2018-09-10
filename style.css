@@ -3,7 +3,7 @@
 
 /* Globals */
 .hidden{
-  display: flex;
+  display: none;
 }
 *{
   padding: 0;
@@ -155,8 +155,11 @@ input, textarea {
     width:100%;
     background: none;
   }
+  .topMenuLink{
+    padding: 1vh;
+  }
   .topMenu{
-    display: none;
+    display: flex;
   }
   #topMenu ul{
     width:100%;
@@ -192,9 +195,13 @@ input, textarea {
 }
 
   /* About Me */
+  .pageWrapper{
+    display: flex;
+    flex-direction: column;
+  }
   #aboutMe{
     background: #6897bb;
-    height:100vh;
+    min-height:100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
