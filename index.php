@@ -10,7 +10,10 @@
 </head>
 <body>
   <div id="introDiv">
-    <div id="topMenu">
+    <div id="burgerDiv">
+    <a id="burger">&#9776;</a>
+    </div>
+    <div id="topMenu" class="topMenu">
       <ul>
         <li class="topMenuLink">
           <a href="./about.html">Home</a>
@@ -43,7 +46,7 @@
       <a class="projectBox" id="project1" href="https://reactrpg.herokuapp.com/" target="_blank">
         <h3>React RPG</h3>
         <div class="projecBoxText" id="desc1">
-          <p>Defeat monsters, collect loot.</p>
+          <p>Allow 30s to load (free heroku hosting)</p>
         </div>
       </a>
       <a class="projectBox" id="project2" href="http://mcguffsilverman.com" target="_blank">
@@ -52,12 +55,12 @@
           <p>My mom's professional artist website.</p>
         </div>
       </a>
-      <div class="projectBox" id="project3">
-        <h3>Placeholder</h3>
+      <a class="projectBox" id="project3" href="./rainSim/index.html" target="_blank">
+        <h3>Rain Simulation</h3>
         <div class="projecBoxText" id="desc3">
-          <p>Use your imagination.</p>
+          <p>Rain in HTML5 Canvas</p>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 
@@ -98,5 +101,7 @@
     </div>
     </div>
   </footer>
+
+<script src="./menu.js"></script>
 </body>
 </html>

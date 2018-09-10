@@ -2,10 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
 /* Globals */
+.hidden{
+  display: flex;
+}
+*{
+  padding: 0;
+  margin: 0;
 
-body{
+}
+html{
   margin: 0;
   padding: 0;
+}
+body{
   color:#f7f7f7;
 }
 a{
@@ -80,11 +89,13 @@ input, textarea {
                   /* Sections */
 
 /* Top Menu */
+.topMenu{
+  display: flex;
+}
 #topMenu {
   width:100%;
   height: 10vh;
   max-height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-self:flex-end;
@@ -92,20 +103,21 @@ input, textarea {
   background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+#burger{
+  font-size: 9vmin;
+  display: none;
+}
 #topMenu ul{
-    padding-right: 2vw;
     height: 100%;
     list-style: none;
     width:550px;
-    max-width:67vw;
     display: flex;
     justify-content: space-around;
     align-self: flex-end;
 }
 .topMenuLink{
   height:100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,6 +125,7 @@ input, textarea {
 }
 .topMenuLink a{
   height: 100%;
+  width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,6 +134,41 @@ input, textarea {
 }
 .topMenuLink:hover{
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (max-width:900px){
+  #burgerDiv{
+    display: flex;
+    justify-content: flex-end;
+    height: 13vmin;
+    align-self: flex-end;
+    padding-right: 10px;
+  }
+  #burger{
+    display: flex;
+    height: 10vmin;
+    width:10vmin;
+    cursor: pointer;
+  }
+  #topMenu{
+    height:40vh;
+    width:100%;
+    background: none;
+  }
+  .topMenu{
+    display: none;
+  }
+  #topMenu ul{
+    width:100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  #topMenu ul li{
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
   /* Intro Div */
@@ -146,12 +194,14 @@ input, textarea {
   /* About Me */
   #aboutMe{
     background: #6897bb;
-    height:auto;
-    min-height:100vh;
+    height:100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+  }
+
+  #aboutMe p{
+    margin: 16px 0;
   }
   #aboutMeCopy a{
     font-size: 3vmin;
@@ -160,13 +210,14 @@ input, textarea {
   #aboutMeCopy a:hover{
     text-decoration: underline;
   }
-  #aboutMeHeader{
-    margin-top: 3vmax;
-    margin-bottom: 3vmax;
+  #aboutMeHeader h2{
+    margin: 20px 0;
   }
   #aboutMePic img{
     border-radius: 50%;
     height: 26vh;
+    float: left;
+    margin: 3vmin;
   }
   #aboutMeCopy{
     margin-left: 4vmin;
@@ -181,8 +232,9 @@ input, textarea {
   align-items: center;
 }
 #projectsFlexContainer{
+  margin: 0;
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -251,7 +303,7 @@ input, textarea {
   background-position: center;
 }
 #project3{
-  background-image: url("./pics/moss.jpg");
+  background-image: url("./pics/rainSim.png");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -329,13 +381,17 @@ input, textarea {
 }
 #socialButtonHolder{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width:40vmin;
 }
 .socialButton{
   border-radius: 50%;
   width: 9vmin;
   height: 9vmin;
+  max-width: 40px;
+  max-height: 40px;
+
   margin-right: 1vw;
   background: #transparent;
   font-size: 20px;
