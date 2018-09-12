@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Mike Silverman</title>
-<link rel="icon" href="https://image.flaticon.com/icons/svg/106/106842.svg">
 <link rel="stylesheet" href="style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=glyph:300,400,600,700&amp;lang=en" />
@@ -11,7 +11,7 @@
 <body>
   <div id="introDiv">
     <div id="burgerDiv">
-    <a id="burger">&#9776;</a>
+    <a id="burger"><i class="fa fa-bars"></i></a>
     </div>
     <div id="topMenu" class="topMenu">
       <ul>
@@ -43,10 +43,10 @@
       </h2>
     </div>
     <div id="projectsFlexContainer">
-      <a class="projectBox" id="project1" href="https://reactrpg.herokuapp.com/" target="_blank">
+      <a class="projectBox" id="project1" href="./reactRpg.html">
         <h3>React RPG</h3>
         <div class="projecBoxText" id="desc1">
-          <p>Allow 30s to load (free heroku hosting)</p>
+          <p>Explore the dungeon.</p>
         </div>
       </a>
       <a class="projectBox" id="project2" href="http://mcguffsilverman.com" target="_blank">
