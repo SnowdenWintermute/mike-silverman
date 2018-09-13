@@ -286,6 +286,9 @@ input, textarea {
   font-size: 3vmin;
   cursor: pointer;
 }
+.picButton:hover{
+  border: 2px solid aliceblue;
+}
 #reactRpgPicHolder img{
   max-height: 720px;
   max-width: 75%;
