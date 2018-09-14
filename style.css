@@ -21,9 +21,7 @@ body{
 }
 a{
   text-decoration: none;
-  color: inherit;
-  font-family: sans-serif;
-  font-size: 2vh;
+  color: lightblue;
 }
 h1{
   font-size: 13vmin;
@@ -134,6 +132,7 @@ input, textarea {
   align-items: center;
   font-size: 3vmin;
   color: white;
+  font-family: "Righteous";
 }
 .topMenuLink:hover{
   background-color: rgba(255, 255, 255, 0.7);
@@ -310,37 +309,128 @@ input, textarea {
   }
   #aboutMe{
     background: #6897bb;
-    min-height:100vh;
+    height:100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  #aboutMe p{
-    margin: 16px 0;
+  .aboutMeSection p{
+    margin: 16px 16px;
   }
-  #aboutMeCopy a{
-    font-size: 3vmin;
+  .aboutMeSection a:link{
+    font-family: "Baloo Bhai"
     color: lightblue;
   }
-  #aboutMeCopy a:hover{
+  .aboutMeSection a:visited{
+    font-family: "Baloo Bhai"
+    color: lightblue;
+  }
+  .aboutMeSection a:hover{
     text-decoration: underline;
+  }
+  .flexRow{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  #aboutMeHeader{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #aboutMeHeader h3{
+    pointer-events: all;
+  }
+  #aboutMeHeader a:hover{
+    color:white;
   }
   #aboutMeHeader h2{
     margin: 5vh 0;
+    text-align: center;
+  }
+  #headerPic{
+    margin: 0 5%;
+    max-height: 30vh;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px black;
+
+  }
+  .aboutMeSection ul{
+    list-style: none;
+    margin: 3vmin;
+    font-size: 3vmin;
+    font-family: "Righteous"
+  }
+  .aboutMeSection{
+    background: #6897bb;
+    width:100%;
+    height: auto;
+    padding: 16px 0;
+  }
+  .aboutMeSection h3, .aboutMeSection p{
+    margin-left: 3vmin;
+  }
+  #aboutMeLearner{
+    background: #5983bb;
+    display: flex;
+    flex-direction: column;
+  }
+  #aboutMeLearnerHeader{
+  margin-bottom: 16px;
+  }
+  #backpackerPic{
+    float: right;
+    margin: 16px;
+  }
+  #backpackerPic img{
+    height: 950px;
+    max-height: 40vw;
+    width: 900px;
+    max-width:40vw;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px black;
+  }
+  #backpackerPic img:hover{
+    border: 1px solid aliceblue;
+  }
+  #aboutMeTeacher{
+    background: #355969;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #aboutMeTeacher img{
+    width: 95%;
+    align-self: center;
+    margin-bottom: 16px;
+    box-shadow: 2px 2px 2px 2px black;
   }
   #aboutMePic img{
     border-radius: 50%;
     height: 26vh;
     float: left;
-    margin: 3vmin;
+    margin: 3vmin 3vmin 3vmin 3vmin;
+  }
+  #workstationPic{
+    width: 95%;
+    align-self: center;
+    margin-bottom: 16px;
+    box-shadow: 2px 2px 2px 2px black;
+    object-fit: cover;
+    object-position: top;
+    margin: 2.5%;
   }
   #aboutMeCopy{
-    margin-left: 4vmin;
-    margin-right: 4vmin;
+    background: #3b5998;
   }
   /* Mid Div */
-#midDiv{
+#projects{
   background: #3b5998;
   height:100vh;
   display: flex;
@@ -427,7 +517,7 @@ input, textarea {
 
 
   /* Bottom Div */
-#botDiv{
+#contact{
   background: #001f3f;
   height:100vh;
   display: flex;

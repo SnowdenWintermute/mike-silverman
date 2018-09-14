@@ -22,21 +22,21 @@
           <a href="./about.html">About</a>
         </li>
         <li class="topMenuLink">
-          <a href="./index.php#midDiv">Projects</a>
+          <a href="./index.php#projects">Projects</a>
         </li>
         <li class="topMenuLink">
-          <a href="./index.php#botDiv">Contact</a>
+          <a href="./index.php#contact">Contact</a>
         </li>
       </ul>
     </div>
     <div id="introDivText">
     <h1>Hi, I'm Mike</h1>
     <h3>This is my landing page</h3>
-    <a class="button transparentButton" href="#midDiv">Lets go</a>
+    <a class="button transparentButton" href="#projects">Lets go</a>
     </div>
   </div>
 
-  <div id="midDiv">
+  <div id="projects">
     <div id="projectsHeader">
       <h2 id="projectsLabel">
         Projects
@@ -64,7 +64,7 @@
     </div>
   </div>
 
-  <div id="botDiv">
+  <div id="contact">
     <div id="contactHeader">
       <h2 id="contactLabel">
         Contact
@@ -82,8 +82,8 @@
     <div id="footerLinks">
       <a href="#introDiv">Home</a>&nbsp;|
       <a href="./about.html">About</a>&nbsp;|
-      <a href="#midDiv">Projects</a>&nbsp;|
-      <a href="#botDiv">Contact</a>
+      <a href="#projects">Projects</a>&nbsp;|
+      <a href="#contact">Contact</a>
     </div>
     <div id="socialButtonHolder">
       <a class="socialButton" id="instagram" href="https://www.instagram.com/michaelpsilverman/" target="_blank">
